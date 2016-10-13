@@ -1,11 +1,10 @@
 //
 //  ContactViewController.h
-//  WeChatContacts-demo
+//  weixin
 //
-//  Created by shen_gh on 16/3/12.
-//  Copyright © 2016年 com.joinup(Beijing). All rights reserved.
+//  Created by guoyi on 16/10/11.
+//  Copyright © 2016年 guoyi. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
 
 @interface ContactViewController : UIViewController

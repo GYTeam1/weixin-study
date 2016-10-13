@@ -16,7 +16,7 @@
 		054D49F01DACC35000E529F2 /* weixinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D49EF1DACC35000E529F2 /* weixinTests.m */; };
 		054D49FB1DACC35000E529F2 /* weixinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054D49FA1DACC35000E529F2 /* weixinUITests.m */; };
 		05DA94321DACCF3A00590FDC /* GYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA94311DACCF3A00590FDC /* GYNavigationController.m */; };
-		05DA94351DACD21000590FDC /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA94341DACD20F00590FDC /* FirstTableViewController.m */; };
+		05DA94351DACD21000590FDC /* WeixinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA94341DACD20F00590FDC /* WeixinTableViewController.m */; };
 		05DA944B1DACD58600590FDC /* weixin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05DA94361DACD58600590FDC /* weixin.plist */; };
 		05DA944C1DACD58600590FDC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05DA94371DACD58600590FDC /* 1.jpg */; };
 		05DA944D1DACD58600590FDC /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05DA94381DACD58600590FDC /* 2.jpg */; };
@@ -37,8 +37,7 @@
 		05DA945C1DACD58600590FDC /* 18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05DA94471DACD58600590FDC /* 18.jpg */; };
 		05DA945D1DACD58600590FDC /* 19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05DA94481DACD58600590FDC /* 19.jpg */; };
 		05DA945E1DACD58600590FDC /* 20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05DA94491DACD58600590FDC /* 20.jpg */; };
-		05DA945F1DACD58600590FDC /* 21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05DA944A1DACD58600590FDC /* 21.jpg */; };
-		05DA94621DACDFF700590FDC /* GYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DA94611DACDFF700590FDC /* GYTabBarController.m */; };
+		05DA945F1DACD58600590FDC /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05DA944A1DACD58600590FDC /* 9.jpg */; };
 		05ED587D1DACFA3700B7BB11 /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ED587C1DACFA3700B7BB11 /* ContactModel.m */; };
 		05ED58841DACFB4400B7BB11 /* ContactDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ED58811DACFB4400B7BB11 /* ContactDataHelper.m */; };
 		05ED58851DACFB4400B7BB11 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ED58831DACFB4400B7BB11 /* NSString+Utils.m */; };
@@ -102,8 +101,8 @@
 		054D49FC1DACC35000E529F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05DA94301DACCF3A00590FDC /* GYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYNavigationController.h; sourceTree = "<group>"; };
 		05DA94311DACCF3A00590FDC /* GYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYNavigationController.m; sourceTree = "<group>"; };
-		05DA94331DACD20F00590FDC /* FirstTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
-		05DA94341DACD20F00590FDC /* FirstTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewController.m; sourceTree = "<group>"; };
+		05DA94331DACD20F00590FDC /* WeixinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinTableViewController.h; sourceTree = "<group>"; };
+		05DA94341DACD20F00590FDC /* WeixinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinTableViewController.m; sourceTree = "<group>"; };
 		05DA94361DACD58600590FDC /* weixin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = weixin.plist; sourceTree = "<group>"; };
 		05DA94371DACD58600590FDC /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		05DA94381DACD58600590FDC /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
@@ -124,9 +123,7 @@
 		05DA94471DACD58600590FDC /* 18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 18.jpg; sourceTree = "<group>"; };
 		05DA94481DACD58600590FDC /* 19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 19.jpg; sourceTree = "<group>"; };
 		05DA94491DACD58600590FDC /* 20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20.jpg; sourceTree = "<group>"; };
-		05DA944A1DACD58600590FDC /* 21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 21.jpg; sourceTree = "<group>"; };
-		05DA94601DACDFF700590FDC /* GYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYTabBarController.h; sourceTree = "<group>"; };
-		05DA94611DACDFF700590FDC /* GYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYTabBarController.m; sourceTree = "<group>"; };
+		05DA944A1DACD58600590FDC /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		05ED587B1DACFA3700B7BB11 /* ContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactModel.h; sourceTree = "<group>"; };
 		05ED587C1DACFA3700B7BB11 /* ContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactModel.m; sourceTree = "<group>"; };
 		05ED58801DACFB4400B7BB11 /* ContactDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDataHelper.h; sourceTree = "<group>"; };
@@ -229,28 +226,8 @@
 		054D49D51DACC35000E529F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				05ED59081DAF4DFC00B7BB11 /* weixin */,
 				05ED58E31DAE693700B7BB11 /* portraits */,
-				05DA94361DACD58600590FDC /* weixin.plist */,
-				05DA94371DACD58600590FDC /* 1.jpg */,
-				05DA94381DACD58600590FDC /* 2.jpg */,
-				05DA94391DACD58600590FDC /* 3.jpg */,
-				05DA943A1DACD58600590FDC /* 4.jpg */,
-				05DA943B1DACD58600590FDC /* 5.jpg */,
-				05DA943C1DACD58600590FDC /* 6.jpg */,
-				05DA943D1DACD58600590FDC /* 7.jpg */,
-				05DA943E1DACD58600590FDC /* 8.jpg */,
-				05DA943F1DACD58600590FDC /* 10.jpg */,
-				05DA94401DACD58600590FDC /* 11.jpg */,
-				05DA94411DACD58600590FDC /* 12.jpg */,
-				05DA94421DACD58600590FDC /* 13.jpg */,
-				05DA94431DACD58600590FDC /* 14.jpg */,
-				05DA94441DACD58600590FDC /* 15.jpg */,
-				05DA94451DACD58600590FDC /* 16.jpg */,
-				05DA94461DACD58600590FDC /* 17.jpg */,
-				05DA94471DACD58600590FDC /* 18.jpg */,
-				05DA94481DACD58600590FDC /* 19.jpg */,
-				05DA94491DACD58600590FDC /* 20.jpg */,
-				05DA944A1DACD58600590FDC /* 21.jpg */,
 				054D49D61DACC35000E529F2 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -279,10 +256,8 @@
 			children = (
 				05DA94301DACCF3A00590FDC /* GYNavigationController.h */,
 				05DA94311DACCF3A00590FDC /* GYNavigationController.m */,
-				05DA94601DACDFF700590FDC /* GYTabBarController.h */,
-				05DA94611DACDFF700590FDC /* GYTabBarController.m */,
-				05DA94331DACD20F00590FDC /* FirstTableViewController.h */,
-				05DA94341DACD20F00590FDC /* FirstTableViewController.m */,
+				05DA94331DACD20F00590FDC /* WeixinTableViewController.h */,
+				05DA94341DACD20F00590FDC /* WeixinTableViewController.m */,
 				05ED58B31DAD3FF000B7BB11 /* ContactViewController.h */,
 				05ED58B41DAD3FF000B7BB11 /* ContactViewController.m */,
 			);
@@ -355,6 +330,34 @@
 			path = portraits;
 			sourceTree = "<group>";
 		};
+		05ED59081DAF4DFC00B7BB11 /* weixin */ = {
+			isa = PBXGroup;
+			children = (
+				05DA94361DACD58600590FDC /* weixin.plist */,
+				05DA94371DACD58600590FDC /* 1.jpg */,
+				05DA94381DACD58600590FDC /* 2.jpg */,
+				05DA94391DACD58600590FDC /* 3.jpg */,
+				05DA943A1DACD58600590FDC /* 4.jpg */,
+				05DA943B1DACD58600590FDC /* 5.jpg */,
+				05DA943C1DACD58600590FDC /* 6.jpg */,
+				05DA943D1DACD58600590FDC /* 7.jpg */,
+				05DA943E1DACD58600590FDC /* 8.jpg */,
+				05DA943F1DACD58600590FDC /* 10.jpg */,
+				05DA94401DACD58600590FDC /* 11.jpg */,
+				05DA94411DACD58600590FDC /* 12.jpg */,
+				05DA94421DACD58600590FDC /* 13.jpg */,
+				05DA94431DACD58600590FDC /* 14.jpg */,
+				05DA94441DACD58600590FDC /* 15.jpg */,
+				05DA94451DACD58600590FDC /* 16.jpg */,
+				05DA94461DACD58600590FDC /* 17.jpg */,
+				05DA94471DACD58600590FDC /* 18.jpg */,
+				05DA94481DACD58600590FDC /* 19.jpg */,
+				05DA94491DACD58600590FDC /* 20.jpg */,
+				05DA944A1DACD58600590FDC /* 9.jpg */,
+			);
+			name = weixin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -422,6 +425,7 @@
 				TargetAttributes = {
 					054D49D11DACC35000E529F2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = M5P2M78ZPA;
 					};
 					054D49EA1DACC35000E529F2 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -489,7 +493,7 @@
 				05DA94501DACD58600590FDC /* 5.jpg in Resources */,
 				05DA94571DACD58600590FDC /* 13.jpg in Resources */,
 				05DA94511DACD58600590FDC /* 6.jpg in Resources */,
-				05DA945F1DACD58600590FDC /* 21.jpg in Resources */,
+				05DA945F1DACD58600590FDC /* 9.jpg in Resources */,
 				054D49E21DACC35000E529F2 /* Assets.xcassets in Resources */,
 				05DA944B1DACD58600590FDC /* weixin.plist in Resources */,
 				05ED59021DAE693700B7BB11 /* 4.png in Resources */,
@@ -527,7 +531,7 @@
 				054D49DD1DACC35000E529F2 /* ViewController.m in Sources */,
 				054D49DA1DACC35000E529F2 /* AppDelegate.m in Sources */,
 				05ED58B21DAD2C7700B7BB11 /* ContactTableViewCell.m in Sources */,
-				05DA94351DACD21000590FDC /* FirstTableViewController.m in Sources */,
+				05DA94351DACD21000590FDC /* WeixinTableViewController.m in Sources */,
 				054D49D71DACC35000E529F2 /* main.m in Sources */,
 				05ED58841DACFB4400B7BB11 /* ContactDataHelper.m in Sources */,
 				05ED58BD1DADF0DA00B7BB11 /* weixinModel.m in Sources */,
@@ -535,7 +539,6 @@
 				05ED58851DACFB4400B7BB11 /* NSString+Utils.m in Sources */,
 				05ED587D1DACFA3700B7BB11 /* ContactModel.m in Sources */,
 				05ED58B51DAD3FF000B7BB11 /* ContactViewController.m in Sources */,
-				05DA94621DACDFF700590FDC /* GYTabBarController.m in Sources */,
 				05ED58BA1DADCA3400B7BB11 /* WeixinTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,10 +682,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = weixin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jikexuyuan.weixin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -690,10 +696,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = weixin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jikexuyuan.weixin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

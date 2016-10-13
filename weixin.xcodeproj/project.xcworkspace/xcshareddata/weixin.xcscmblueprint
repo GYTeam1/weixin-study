@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DC4CE308ADD6574C56D36C504C4EE832D97169EE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DC4CE308ADD6574C56D36C504C4EE832D97169EE" : 0,
+    "7C118E0E26A218C6D10062953DE0C30D5F62F3B8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C5ACE31E-9856-4FAC-89C1-BAEB4926B196",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DC4CE308ADD6574C56D36C504C4EE832D97169EE" : "weixin\/",
+    "7C118E0E26A218C6D10062953DE0C30D5F62F3B8" : "WeChatContacts-demo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "weixin",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "weixin.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/shenAlexy\/WeChatContacts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7C118E0E26A218C6D10062953DE0C30D5F62F3B8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GYTeam1\/weixin-study.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DC4CE308ADD6574C56D36C504C4EE832D97169EE"
+    }
+  ]
+}

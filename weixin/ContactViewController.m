@@ -1,9 +1,9 @@
 //
 //  ContactViewController.m
-//  WeChatContacts-demo
+//  weixin
 //
-//  Created by shen_gh on 16/3/12.
-//  Copyright © 2016年 com.joinup(Beijing). All rights reserved.
+//  Created by guoyi on 16/10/11.
+//  Copyright © 2016年 guoyi. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -15,13 +15,12 @@
 @interface ContactViewController ()
 <UITableViewDelegate,UITableViewDataSource>
 {
-    NSArray *_rowArr;//row arr
-    NSArray *_sectionArr;//section arr
+    NSArray *_rowArr;
+    NSArray *_sectionArr;
 }
 
 @property (nonatomic,strong) NSArray * serverDataArr;//数据源
 @property (nonatomic,strong) NSMutableArray * dataArr;
-
 
 @end
 
@@ -36,25 +35,25 @@
 - (NSArray *)serverDataArr{
     if (!_serverDataArr) {
         _serverDataArr=@[
-  @{@"portrait":@"1",@"name":@"张三丰"},
-  @{@"portrait":@"2",@"name":@"花无缺"},
-  @{@"portrait":@"3",@"name":@"东方不败"},
-  @{@"portrait":@"4",@"name":@"任我行"},
-  @{@"portrait":@"5",@"name":@"逍遥王"},
-  @{@"portrait":@"6",@"name":@"阿离"},
-  @{@"portrait":@"13",@"name":@"百草堂"},
-  @{@"portrait":@"8",@"name":@"三味书屋"},
-  @{@"portrait":@"9",@"name":@"彩彩"},
-  @{@"portrait":@"10",@"name":@"陈晨"},
-  @{@"portrait":@"11",@"name":@"多多"},
-  @{@"portrait":@"12",@"name":@"峨嵋山"},
-  @{@"portrait":@"7",@"name":@"哥哥"},
-  @{@"portrait":@"14",@"name":@"林俊杰"},
-  @{@"portrait":@"15",@"name":@"足球"},
-  @{@"portrait":@"16",@"name":@"58赶集"},
-  @{@"portrait":@"17",@"name":@"搜房网"},
-  @{@"portrait":@"18",@"name":@"欧弟"}
-                        ];
+                         @{@"portrait":@"1",@"name":@"张三"},
+                         @{@"portrait":@"2",@"name":@"花无缺"},
+                         @{@"portrait":@"3",@"name":@"东方不败"},
+                         @{@"portrait":@"4",@"name":@"任我行"},
+                         @{@"portrait":@"5",@"name":@"逍遥王"},
+                         @{@"portrait":@"6",@"name":@"阿离"},
+                         @{@"portrait":@"13",@"name":@"百草堂"},
+                         @{@"portrait":@"8",@"name":@"三味书屋"},
+                         @{@"portrait":@"9",@"name":@"彩儿"},
+                         @{@"portrait":@"10",@"name":@"陈晨"},
+                         @{@"portrait":@"11",@"name":@"多多"},
+                         @{@"portrait":@"12",@"name":@"峨嵋山"},
+                         @{@"portrait":@"7",@"name":@"哥哥"},
+                         @{@"portrait":@"14",@"name":@"林俊杰"},
+                         @{@"portrait":@"15",@"name":@"足球"},
+                         @{@"portrait":@"16",@"name":@"58赶集"},
+                         @{@"portrait":@"17",@"name":@"搜房网"},
+                         @{@"portrait":@"18",@"name":@"欧弟"}
+                         ];
     }
     return _serverDataArr;
 }
@@ -72,10 +71,7 @@
     _rowArr=[ContactDataHelper getFriendListDataBy:self.dataArr];
     _sectionArr=[ContactDataHelper getFriendListSectionBy:[_rowArr mutableCopy]];
     
-    //configNav
     [self configNav];
-    //布局View
- //   [self setUpView];
     
     _searchResultArr=[NSMutableArray array];
 }
@@ -88,19 +84,15 @@
 }
 
 
-
-
 #pragma mark - UITableView delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     //section
-
-        return _rowArr.count;
+    
+    return _rowArr.count;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     //row
-
-        return [_rowArr[section] count];
-
+    return [_rowArr[section] count];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 50.0;
@@ -120,15 +112,11 @@
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
     
     return _sectionArr;
-
+    
 }
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index{
     return index-1;
 }
-//- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-//
-//        return 22.0;
-//}
 
 #pragma mark - UITableView dataSource
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -138,15 +126,14 @@
         cell=[[ContactTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIde];
     }
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-
-        ContactModel *model=_rowArr[indexPath.section][indexPath.row];
-        
-        [cell.headImageView setImage:[UIImage imageNamed:model.portrait]];
-        [cell.nameLabel setText:model.name];
+    
+    ContactModel *model=_rowArr[indexPath.section][indexPath.row];
+    
+    [cell.headImageView setImage:[UIImage imageNamed:model.portrait]];
+    [cell.nameLabel setText:model.name];
     
     return cell;
 }
-
 
 #pragma mark - 源字符串内容是否包含或等于要搜索的字符串内容
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {

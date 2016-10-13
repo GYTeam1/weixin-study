@@ -6,7 +6,7 @@
 //  Copyright © 2016年 guoyi. All rights reserved.
 //
 
-#import "ContactTableViewCell.h"
+
 #import <UIKit/UIKit.h>
 @class weixinModel;
 
@@ -22,6 +22,5 @@
 
 //微信模型
 @property (nonatomic, strong) weixinModel *weixin;
-
-//@property (nonatomic,strong) UILabel *contentLabel;//最新消息记录
+-(void)setWeixin:(weixinModel *)weixin;
 @end

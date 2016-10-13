@@ -1,5 +1,5 @@
 //
-//  ContactViewController.h
+//  ContactViewController.m
 //  weixin
 //
 //  Created by guoyi on 16/10/11.

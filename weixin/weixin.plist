@@ -162,13 +162,5 @@
 		<key>image</key>
 		<string>20.jpg</string>
 	</dict>
-	<dict>
-		<key>name</key>
-		<string>山河</string>
-		<key>content</key>
-		<string>Yahoo</string>
-		<key>image</key>
-		<string>21.jpg</string>
-	</dict>
 </array>
 </plist>

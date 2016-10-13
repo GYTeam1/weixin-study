@@ -15,24 +15,11 @@
 
 @implementation WeixinTableViewCell
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(void)setWeixin:(weixinModel *)weixin{
+    _weixin = weixin;
+    self.headimage.image = [UIImage imageNamed:weixin.image];
+    self.name.text = weixin.name;
+    self.content.text = weixin.content;
 }
-*/
-
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-    self=[super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    return self;
-}
-
-
-
-
-
-
-
 
 @end

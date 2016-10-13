@@ -20,8 +20,6 @@
     self.name = [dic objectForKey:@"name"];
     self.portrait = [dic objectForKey:@"portrait"];
     
-//    NSLog(@"%@, name: %s\n", _name);
-    
     return self;
 }
 @end
