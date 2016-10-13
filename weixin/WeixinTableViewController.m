@@ -6,14 +6,14 @@
 //  Copyright © 2016年 guoyi. All rights reserved.
 //
 
-#import "FirstTableViewController.h"
+#import "WeixinTableViewController.h"
 #import "WeixinTableViewCell.h"
 
-@interface FirstTableViewController ()
+@interface WeixinTableViewController ()
 @property(nonatomic,weak)UIView *coverView;
 @end
 
-@implementation FirstTableViewController
+@implementation WeixinTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

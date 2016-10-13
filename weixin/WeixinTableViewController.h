@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 /*微信子频道的TableviewControler*/
-@interface FirstTableViewController : UITableViewController
+@interface WeixinTableViewController : UITableViewController
 
 @end
